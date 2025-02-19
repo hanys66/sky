@@ -8,8 +8,7 @@
   },
   "scripts": {
     "start": "node sky.js",
-    "postinstall": "npx puppeteer browsers install chrome",
-    "install": "apt-get update && apt-get install -y libnss3 libatk1.0-0 libx11-xcb1"
+    "postinstall": "npx puppeteer browsers install chrome"
   }
 
 }
