@@ -6,7 +6,11 @@ const PORT = 8889;
 
 // Function to Scrape Data
 async function scrapeNews() {
-    const browser = await puppeteer.launch({ headless: true });
+    //const browser = await puppeteer.launch({ headless: true });
+    const browser = await puppeteer.launch({
+        headless: 'new', // Use the latest headless mode
+        args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-gpu']
+    });
     const page = await browser.newPage();
 
     //await page.goto('https://news.sky.com/entertainment/', { waitUntil: 'domcontentloaded' });
