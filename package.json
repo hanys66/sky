@@ -4,5 +4,10 @@
   "dependencies": {
     "express": "^4.21.2",
     "puppeteer": "^24.2.1"
+  },
+  "scripts": {
+    "start": "node sky.js",
+    "postinstall": "npx puppeteer browsers install chrome"
   }
+
 }
