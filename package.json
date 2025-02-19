@@ -1,0 +1,8 @@
+{
+  "name": "sky",
+  "version": "1.0.0",
+  "dependencies": {
+    "express": "^4.21.2",
+    "puppeteer": "^24.2.1"
+  }
+}
