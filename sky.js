@@ -9,6 +9,7 @@ async function scrapeNews() {
     //const browser = await puppeteer.launch({ headless: true });
     const browser = await puppeteer.launch({
         headless: 'new', // Use the latest headless mode
+        executablePath: '/opt/render/.cache/puppeteer/chrome/linux-133.0.6943.98/chrome',
         args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-gpu']
     });
     const page = await browser.newPage();
